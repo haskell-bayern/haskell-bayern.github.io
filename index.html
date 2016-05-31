@@ -2,8 +2,16 @@
 <meta charset="utf-8">
 <style>
 body {
-  background: #fff url("logo.png") repeat fixed center;
+  background: #fff url(logo.png) repeat fixed center;
   font-family: sans-serif;
+}
+@media all and (-webkit-min-device-pixel-ratio : 1.5),
+       all and (-o-min-device-pixel-ratio: 3/2),
+       all and (min--moz-device-pixel-ratio: 1.5),
+       all and (min-device-pixel-ratio: 1.5) {
+  body {
+    background-image: url(logo@2x.png);
+  }
 }
 div#main {
   width: 23em;
